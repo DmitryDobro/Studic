@@ -1,0 +1,39 @@
+.aside {
+    margin-right: 55px;
+    @media(max-width: 1000px){
+        display: none;
+    }
+    }
+    .aside-list {
+        position: sticky;
+        top: 100px;
+        li{
+            margin-bottom: 25px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .aside-list_content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .aside-list_title {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 133% ;
+        letter-spacing: 0.03em;
+        color: #767676;
+        max-width: 200px;
+    
+    }
+    .aside-list_amount {
+        background-color: #ffff;
+        border-radius: 10px;
+        padding: 8px;
+        font-family: 'Formular';
+        font-size: 12px;
+        line-height: 16px;
+    }

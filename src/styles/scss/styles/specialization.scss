@@ -1,0 +1,229 @@
+.specialization {
+    margin-bottom: 50px;
+}
+.specialization-header {
+    margin-bottom: 22px;
+}
+
+.specialization-filter {
+    ul{
+        display: flex;
+        span{
+            margin-right: 20px;
+            font-size: 13px;
+            line-height: 154%;
+            color: #222222;
+        }
+        li{
+            margin-right: 50px;
+            font-size: 13px;
+            line-height: 154%;
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+    @media(max-width: 1000px){
+        display: none;
+    }
+}
+.specialization-body {
+}
+
+.specialization-card {
+    display: flex;
+    padding: 16px;
+    background-color: #ffff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    &:last-child{
+        margin-bottom: 0px;
+    }
+    @media(max-width: 768px){
+        flex-direction: column;
+        margin-bottom: 0;
+    
+    }
+}
+.specialization-item.itemImg{
+    width: 169px;
+    height: 216px;
+    picture{
+        width: 100%;
+        height: 100%;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+    }
+    @media(max-width: 768px){
+        display: block;
+        width: auto;
+        height: auto;
+        picture{
+        
+        }
+        img{
+
+        }
+    }
+}
+.specialization-item {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 15px;
+    &.borderRight{
+        position: relative;
+    &::after{
+        display: flex;
+        flex-direction: column;
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background: #D8D8D8;
+        right: 0;
+        @media(max-width: 768px){
+            display: none;
+        }
+    }
+    }
+   &:last-child{
+    flex: 1 1 25%;
+    margin-right: 0px;
+   }
+   &.rowMobile{
+    @media(max-width: 768px){
+        flex-direction: row;
+    }
+   }
+
+}
+
+.specialization-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: #D8D8D8;
+        bottom: -10px;
+    }
+    &:last-child{
+        &::after{
+            content: "";
+            display: none;
+        }
+    }
+    @media(max-width: 768px){
+        flex-direction: column;
+        &::after{
+            display: none;
+        }
+    }
+}
+
+
+
+
+.specialization-code {
+    font-weight: 600;
+    font-size: 10px;
+    line-height:200%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+}
+.specialization-name {
+    font-family: 'Formular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 133%;
+    color: #222222;
+    @media(max-width: 768px){
+        margin-bottom: 21px;
+    }
+}
+.specialization-format {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    line-height: 157%;
+    color: #222222;
+    span{
+        padding: 7px;
+        margin:0px 10px 10px 0;
+        border: 1px solid #D8D8D8;
+        border-radius: 47px;
+        &:last-child{
+            margin: 0px 0px 10px 0px;
+        }
+    }
+    @media(max-width: 768px){
+        margin-bottom: 21px;
+    }
+}
+.specialization-description {
+    max-width: 400px;
+    font-size: 13px;
+    line-height: 192%;
+    @media(max-width: 768px){
+        display: none;
+    }
+}
+.specialization-all {
+    font-weight: 600;
+    font-size: 13px;
+    line-height:  192%;
+    color: #222222;
+    @media(max-width: 768px){
+        display: none;
+    }
+}
+
+.specialization-line_text{
+    line-height: 167%;
+}
+
+.specialization-icons {
+    display: flex;
+    align-items: center;
+    @media(max-width: 768px){
+        display: none;
+    }
+    > div{
+        margin-right: 10px;
+    }
+}
+
+
+
+.specialization-link {
+    margin-top: 20px;
+    @media(max-width: 768px){
+        display: flex;
+        margin-top: 0;
+    }
+}
+
+
+// =================
+// .mobile-block{
+// display: none;
+// @media(max-width: 992px){
+//     display: block;
+// }
+// }
+
+.swiper-pagination{
+    position: static !important;
+    margin: 16px 0;
+}
